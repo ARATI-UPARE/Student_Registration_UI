@@ -13,7 +13,6 @@ class StudentData extends Component{
                     {headerName: "EmailId", field: "emailid"},
                     {headerName: "MobileNumber", field: "mobilenumber"}    
                 ],
-    
         }
     }
 
@@ -32,12 +31,12 @@ class StudentData extends Component{
         return this.state.students.map((student, index) => {
            const { id, firstName, lastName, emailId, mobileNumber } = student //destructuring
            return (
-              <tr style={{border:"1px solid black"}} key={id}>
-                 <td style={{border:"1px solid black"}} >{id}</td>
-                 <td style={{border:"1px solid black"}}>{firstName}</td>
-                 <td style={{border:"1px solid black"}}>{lastName}</td>
-                 <td style={{border:"1px solid black"}}>{emailId}</td>
-                 <td style={{border:"1px solid black"}}>{mobileNumber}</td>
+              <tr key={id}>
+                 <td>{id}</td>
+                 <td>{firstName}</td>
+                 <td>{lastName}</td>
+                 <td>{emailId}</td>
+                 <td>{mobileNumber}</td>
               </tr>
            )
         })
@@ -45,13 +44,13 @@ class StudentData extends Component{
 
     render(){
         return(
-            <div style={{ marginLeft:"30%",fontSize:"30px",border:"1px solid black",marginRight:"22.7%"}}>
-                <h2 id='title' style={{ marginLeft:"35%"}}>Student Data Table</h2>
-                <table id='students'style={{border:"1px solid black"}} >
-                    <thead style={{border:"1px solid black"}}>
-                        <tr style={{border:"1px solid black"}}>{this.state.columnDefs.map(col => <th key={col.headerName}>{col.headerName}</th>)}</tr>
+            <div>
+                <h2 className="text-center">Student Data Table</h2>
+                <table className="table table-stripped">
+                    <thead >
+                        <tr>{this.state.columnDefs.map(col => <th key={col.headerName}>{col.headerName}</th>)}</tr>
                     </thead>
-                    <tbody style={{border:"1px solid black"}}>
+                    <tbody>
                         {this.renderTableData()}
                     </tbody>
                 </table>

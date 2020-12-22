@@ -7,7 +7,7 @@ class Home extends Component{
         return(
             <Row>
             <Col></Col>
-            <Col> <Card style={{width:"42rem"}}> <Register/></Card></Col>
+            <Col> <Register/></Col>
             <Col></Col>
           </Row>
         

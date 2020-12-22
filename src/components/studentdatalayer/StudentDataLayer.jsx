@@ -21,15 +21,5 @@ class StuentDataLayer {
             console.log("Registered Successfully!")
     }
 
-    // To Get All Student Information
-    async fetchAllBook() {
-        await fetch(`http://localhost:8082/getallstudendata`)
-            .then(res => {
-                console.log(res)
-            })         
-            
-    }
-
-
 }
 export default StuentDataLayer;

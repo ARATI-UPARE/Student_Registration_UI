@@ -10,9 +10,9 @@ class App extends Component{
     <Router>
     <div>
       <Header/>
-  <Routes/>
-  </div>
-  </Router>
+      <Routes/>
+    </div>
+    </Router>
   );
   }
 }

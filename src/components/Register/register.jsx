@@ -75,8 +75,8 @@ class Register extends Component{
         const { firstNameErr, emailIdErr, mobileNumberErr } = this.state.formErrors;    
 
         return(
-            <div style={{marginTop:"50px",alignSelf:"center",textAlign:"center"}}>
-                <h2>Student Register Here...!</h2>
+            <div style={{marginTop:"50px",alignSelf:"center",textAlign:"start"}}>
+                <h1>Register Here...!</h1>
                 <br/>
             <Form>
                 <FormGroup>
